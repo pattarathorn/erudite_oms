@@ -1,0 +1,73 @@
+/* input */
+
+.cardinput{
+    position: absolute;
+    width: 577px;
+    height: 391px;
+    left: 45px;
+    top: 45px;
+    /* white */
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.time{
+    position: absolute;
+    width: 110px;
+    height: 42px;
+    left: 83px;
+    top: 259px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1E4B72;
+    border-style: none;
+}
+
+
+
+.calendarBlock{
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    left: 71px;
+    top: 71px;
+    /* base */
+    background: #E4E5E6;
+    border-radius: 20px;
+}
+
+.calendarTop{
+    position: absolute;
+    width: 134px;
+    height: 50px;
+    left: 71px;
+    top: 71px;
+    /* main-3 */
+    background: #1E4B72;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.dateOnCalendar{
+    position: absolute;
+    width: 72px;
+    height: 75px;
+    border:0;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 55px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+    
+    /* dark */
+    color: #404040;
+}
