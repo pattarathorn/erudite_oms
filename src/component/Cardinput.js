@@ -23,6 +23,7 @@ function Cardinput(){
             */}
             </Card.Body>
         </Card>
+        
     )
 }
 

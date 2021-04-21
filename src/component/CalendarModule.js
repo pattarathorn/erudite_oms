@@ -19,6 +19,7 @@ function CalendarModule(){
         </div>
         <div className="calendarTop">
                 <div className="dateOnCalendar">{date}</div>
+                
         </div>
       {/*<Calendar
         onChange={onChange}
