@@ -2,14 +2,17 @@
 
 .cardinput{
     position: absolute;
-    width: 577px;
-    height: 391px;
-    left: 45px;
-    top: 45px;
+    height: 100vh;
+    width: 640px;
+
+
     /* white */
     background: #FFFFFF;
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
+
 }
 
 .time{
@@ -105,4 +108,65 @@ button{
     width: 64px;
     height: 64px;
     /* white */
+}
+.date-calendar{
+    position: absolute;
+    width: 73px;
+    height: 75px;
+    left: 294px;
+    top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* dark */
+    color: #404040;
+}
+.dateprev-calendar{
+    position: absolute;
+    width: 73px;
+    height: 75px;
+    left: 203px;
+    top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* dark */
+    color: rgba(64, 64, 64, 0.25);
+}
+.datenext-calendar{
+    position: absolute;
+    width: 73px;
+    height: 75px;
+    left: 391px;
+    top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* dark */
+    color: rgba(64, 64, 64, 0.25);
+}
+.modal-calendar{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    left: 7.5%;
+    top:25%;
+}
+
+.card-data{
+    position: absolute;
+    width: 591px;
+    height: 457px;
+    left: 25px;
+    top: 240px;
+    /* white */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }

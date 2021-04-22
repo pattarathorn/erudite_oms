@@ -11,7 +11,11 @@ function Cardinput(){
     return(
         <Card className ="cardinput">
             <Card.Body>
+                
                 <CalendarModule />
+                <div className = "card-data">
+                    
+                </div>
                 {/*<Time />*/}
 
             {/*  <Card.Title>Card Title</Card.Title>
