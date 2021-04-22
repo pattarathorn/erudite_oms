@@ -31,42 +31,78 @@
 
 .calendarBlock{
     position: absolute;
-    width: 134px;
-    height: 134px;
-    left: 71px;
-    top: 71px;
+    width: 500px;
+    height: 117px;
+    left: 51px;
+    top: 37px;
+    
     /* base */
+    
     background: #E4E5E6;
     border-radius: 20px;
 }
-
-.calendarTop{
+button{
+    border:0;
+    padding:0;
+    margin:0;
+}
+.calendarMonth-Year{
     position: absolute;
-    width: 134px;
-    height: 50px;
-    left: 71px;
-    top: 71px;
-    /* main-3 */
+    width: 166px;
+    height: 117px;
+    left: 51px;
+    top: 37px;
+
     background: #1E4B72;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
+    border-bottom-left-radius: 20px;
 }
 
-.dateOnCalendar{
+.month-calendar{
+    left: 0;
+    top:0;
     position: absolute;
-    width: 72px;
-    height: 75px;
-    border:0;
-    padding-left: 31px;
-    padding-right: 31px;
-    padding-top: 55px;
+    width: 55px;
+    height: 28px;
+    padding-left: 94px;
+    padding-top: 60px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 64px;
-    line-height: 75px;
-    /* identical to box height */
-    /* dark */
-    color: #404040;
+    font-size: 24px;
+    line-height: 28px;
+    
+    /* white */
+    
+    color: #FFFFFF;
+    
+}
+
+.year-calendar{
+    left: 0;
+    top:0;
+    position:absolute;
+    width: 55px;
+    height: 28px;
+    padding-left: 94px;
+    padding-top: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* white */
+    color: #FFFFFF;
+}
+
+.logo-calendar{
+    
+    left: 0;
+    top:0;
+    position: absolute;
+    padding-left: 19px;
+    padding-top: 26.5px;
+    width: 64px;
+    height: 64px;
+    /* white */
 }

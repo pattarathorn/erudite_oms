@@ -1,15 +1,17 @@
 import React from 'react';
 import Time from './Time';
+import CalendarModule from './CalendarModule';
 
 import { Card } from 'react-bootstrap';
 
 import "./style.css";
-import CalendarModule from './CalendarModule';
+
+
 function Cardinput(){
     return(
         <Card className ="cardinput">
             <Card.Body>
-                <CalendarModule/>
+                <CalendarModule />
                 {/*<Time />*/}
 
             {/*  <Card.Title>Card Title</Card.Title>
