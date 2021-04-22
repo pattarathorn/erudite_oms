@@ -1,44 +1,67 @@
-import React,{ useState } from 'react';
-import { Modal } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React,{ useEffect, useState } from 'react';
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import calendarlogo from '../source/calendar.svg';
+import Modal from 'react-modal';
 import './style.css';
 
 
 function CalendarModule(){
-    const [value, onChange] = useState(new Date());
-    const [calendar, setcalendar] = useState(false);
-    const [show, setShow] = useState(false);
+  const [datestate, setDate] = useState(new Date());
+  const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    
-    var listmonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    const month = listmonth[value.getMonth()];
-    const year = value.getFullYear();
-    const date = value.getDate();
-  
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  let datenew = datestate.toLocaleDateString();
+  console.log('New date is: ', datenew)
+
+  /* ---------- setuptime ----------*/
+  var listmonth = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+  const month = listmonth[datestate.getMonth()];
+  const year = datestate.getFullYear();
+  const date = datestate.getDate();
+  const selectedDate = datestate.getFullYear() + "-" + (datestate.getMonth() + 1) + "-" + datestate.getDate()
+  const oneDay = 1000 * 60 *60 *24
+  const currentDayInMilli = new Date(selectedDate).getTime();
+  /* ---------- nextdate ----------*/
+  const nextDayInMilli = currentDayInMilli + oneDay
+  const nextDate = new Date(nextDayInMilli).getDate();
+  /* ---------- prevdate ----------*/
+  const prevDayInMilli = currentDayInMilli - oneDay
+  const prevDate = new Date(prevDayInMilli).getDate();
+
   return (
     <div>
+      {/* -------------------- Modal --------------------*/}
+      <Modal
+          isOpen={show}
+          className= "modal-calendar"
+          contentLabel="Example Modal"
+      >
+          <Calendar
+            onChange={setDate}
+            onClickDay={handleClose}
+            value={datestate}
+          />
+      </Modal>
+
+      {/* ------------------------------------------------*/}
+        
         <div className ="calendarBlock">
-            
+        
+            <div className = "date-calendar" > {date} </div>
+            <div className = "dateprev-calendar" > {prevDate} </div>
+            <div className = "datenext-calendar" > {nextDate} </div>
         </div>
-        <button className="calendarMonth-Year" onClick={() => setcalendar(true)} onClick={handleShow}>
+        <button className="calendarMonth-Year" onClick={handleShow}>
         
             <img src={calendarlogo} className="logo-calendar" alt="logo" />
             <div className="month-calendar">{month}</div>
             <div className="year-calendar">{year}</div>
         </button>
         <div>
-        <Modal show={show} onHide={handleClose}>
-          <Calendar
-            onChange={onChange}
-            onChange={handleClose}
-            value={value} />
-        </Modal>
-      </div>
+          
+        </div>
       <div>
       
       </div>
