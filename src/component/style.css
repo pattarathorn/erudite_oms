@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto';
+  }
+  
 /* input */
 
 .cardinput{
@@ -169,4 +173,19 @@ button{
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+}
+
+.font-listticker{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* dark */
+    color: #404040;
+
+
 }
