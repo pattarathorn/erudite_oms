@@ -53,6 +53,9 @@ button{
     padding:0;
     margin:0;
 }
+
+/*--- calendarModule ---*/
+
 .calendarMonth-Year{
     position: absolute;
     width: 166px;
@@ -163,6 +166,7 @@ button{
     left: 7.5%;
     top:25%;
 }
+/*-----------------------------------*/
 
 .card-data{
     position: absolute;
@@ -175,7 +179,7 @@ button{
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
-
+/* --------- listTicker.js ------------- */
 .font-listticker{
     position: absolute;
     left: 20px;
@@ -189,9 +193,92 @@ button{
     color: #404040;
 }
 
+.show-ticker{
+    position: absolute;
+    width: 43px;
+    height: 28px;
+    left: 20px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* dark */
+    color: #404040;
+}
+.show-volumn{
+    position: absolute;
+    width: fit-content;
+    height: 28px;
+    top: 30px;
+    right: -250px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* dark */
+    color: #404040;
+}
+.show-start-time{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: 270px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* dark */
+    color: #404040;
+}
+.show-end-time{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: 338px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* dark */
+    color: #404040;
+}
+.show-type{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: 433px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* dark */
+    color: #404040;
+}
+/* -----------------------------------------*/
 /* --- Addlist.js ---*/
-.button-add{
-    top:100px
+.button-add{       
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    left: 530px;
+    top: 178px;
+    /* main */
+    background: #FFB216;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    
 }
 .input-ticker{
     position: absolute;
@@ -234,7 +321,7 @@ button{
     font-size: 24px;
     line-height: 28px;
     /* base */
-    color: #E4E5E6;
+    color:#404040;
 }
 .input-timeend{
     position: absolute;
@@ -248,7 +335,7 @@ button{
     font-size: 24px;
     line-height: 28px;
     /* base */
-    color: #E4E5E6;
+    color:#404040;
 }
 .input-switch{
     position: absolute;
@@ -260,3 +347,5 @@ button{
     background: #E4E5E6;
     border-radius: 100px;
 }
+
+/* ----------------- */ 
