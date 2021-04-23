@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react';
+import React,{ useState } from 'react';
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import calendarlogo from '../source/calendar.svg';
@@ -12,8 +12,8 @@ function CalendarModule(){
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  let datenew = datestate.toLocaleDateString();
-  console.log('New date is: ', datenew)
+
+
 
   /* ---------- setuptime ----------*/
   var listmonth = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];

@@ -1,20 +1,33 @@
 import React from 'react';
-import Time from './Time';
 import CalendarModule from './CalendarModule';
+import ListTicker from './ListTicker';
 
 import { Card } from 'react-bootstrap';
 
 import "./style.css";
 
 
+
 function Cardinput(){
+    const props = [
+        {
+            ticker:"CPALL",
+            start_time:"10.00",
+            end_time:"12.30",
+            volumn:"1,000,000,000",
+            type: 0
+            }
+      ];
+
+
     return(
         <Card className ="cardinput">
             <Card.Body>
                 
                 <CalendarModule />
                 <div className = "card-data">
-                    
+                    <ListTicker props={props}/>
+
                 </div>
                 {/*<Time />*/}
 
