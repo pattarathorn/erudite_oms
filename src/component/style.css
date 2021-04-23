@@ -122,11 +122,12 @@ button{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 64px;
-    line-height: 75px;
-    /* dark */
+    font-size: 4em;
+
     color: #404040;
+    line-height: 75px;
 }
+
 .dateprev-calendar{
     position: absolute;
     width: 73px;
@@ -136,7 +137,7 @@ button{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 75px;
     /* dark */
     color: rgba(64, 64, 64, 0.25);
@@ -150,7 +151,7 @@ button{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 75px;
     /* dark */
     color: rgba(64, 64, 64, 0.25);
@@ -186,10 +187,76 @@ button{
     line-height: 28px;
     /* dark */
     color: #404040;
-
-
 }
 
+/* --- Addlist.js ---*/
 .button-add{
     top:100px
+}
+.input-ticker{
+    position: absolute;
+    top: 183px;
+    left: 25px;
+    width: 94px;
+    height: 28px;
+    border-style: none none solid none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* base */
+    color: #000000;
+}
+.input-volomn{
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    left: 142px;
+    top: 183px;
+    border-style: none none solid none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* base */
+    color:#404040;
+;
+}
+.input-timestart{
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    left: 254px;
+    top: 183px;
+    border-style: none none solid none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* base */
+    color: #E4E5E6;
+}
+.input-timeend{
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    left: 364px;
+    top: 183px;
+    border-style: none none solid none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* base */
+    color: #E4E5E6;
+}
+.input-switch{
+    position: absolute;
+    width: 60px;
+    height: 32px;
+    left: 458px;
+    top: 178px;
+    /* base */
+    background: #E4E5E6;
+    border-radius: 100px;
 }

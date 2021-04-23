@@ -8,6 +8,7 @@ import "./style.css";
 /* Mockdata */
 const initialList = [
     {
+        id:"1",
         ticker:"CPALL",
         start_time:"10.00",
         end_time:"12.30",
