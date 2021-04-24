@@ -4,6 +4,7 @@ import Switch from 'react-switch'
 import './style.css';
 
 
+
 const AddList = ({ initList,  setlist}) => {
     /* --- Type --- */
     const [check,setStatus]=useState(false)

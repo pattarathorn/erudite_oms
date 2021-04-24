@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CalendarModule from './CalendarModule';
 import ListTicker from './ListTicker';
 import AddList from './AddList';
+import TickerDropdown from './TickerDropdown';
 import { Card } from 'react-bootstrap';
 
 import "./style.css";
@@ -31,8 +32,8 @@ const Cardinput = () => {
                 <div className = "card-data">
                     <ListTicker props={list} />
                 </div>
-                {/*<Time />*/}
             </Card.Body>
+            <div className="input-dropdown"> <TickerDropdown /> </div>
         </Card>
     )
 }
