@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import CalendarModule from './CalendarModule';
 import ListTicker from './ListTicker';
 import AddList from './AddList';
-import TickerDropdown from './TickerDropdown';
+
 import { Card } from 'react-bootstrap';
+import axios from 'axios';
 
 import "./style.css";
 /* Mockdata */
@@ -19,12 +20,38 @@ const initialList = [
 ];
 
 const Cardinput = () => {
-    const [list,setList] = useState(initialList)
+    const [list,setList] = useState(initialList);
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        axios("https://randomuser.me/api")
+            .then((response) => {
+                setData(response.data);
+            })
+            .catch((error) => {
+                console.error("Error fetching data: ", error);
+                setError(error);
+            })
+            .finally(() => {
+                setLoading(false);
+            }
+        );
+    }, []);
+    if (loading) return "Loading...";
+    if (error) return "Error!";
+    
+
 
     return(
         <Card className ="cardinput">
             <Card.Body>
-                <CalendarModule />
+            
+
+                <CalendarModule 
+                    props = {list}
+                    setlist = {setList}
+                />
                 <AddList  
                     initList = {list} 
                     setlist = {setList}
@@ -34,6 +61,7 @@ const Cardinput = () => {
                         props={list} 
                         setlist = {setList}
                     />
+                    
                 </div>
             </Card.Body>
             

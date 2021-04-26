@@ -30,12 +30,12 @@ const AddList = ({ initList,  setlist}) => {
 
     /* --- change state element --- */
 
- {/*   function changeTicker(e){
+ /*   function changeTicker(e){
         setTicker(prevticker => e.target.value)
         console.log(ticker)
     }
 
-*/}
+*/
 
     function changeVolumn(e){
         console.log(volumn)

@@ -9,6 +9,7 @@
     "@vx/group": "0.0.199",
     "@vx/scale": "0.0.199",
     "@vx/shape": "0.0.199",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "react": "^17.0.2",
     "react-autosuggest": "^10.1.0",

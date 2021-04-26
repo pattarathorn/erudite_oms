@@ -6,11 +6,16 @@ import Modal from 'react-modal';
 import './style.css';
 
 
-function CalendarModule(){
+const CalendarModule = ({ props,  setlist}) =>{
   const [datestate, setDate] = useState(new Date());
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => 
+  {
+    setShow(false)
+    setlist([]);
+  }
+
   const handleShow = () => setShow(true);
 
 

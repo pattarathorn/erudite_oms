@@ -51,7 +51,9 @@ button{
     border:0;
     padding:0;
     margin:0;
+    border-radius: 0px;
 }
+
 
 /*--- calendarModule ---*/
 
@@ -196,13 +198,17 @@ button{
     /* dark */
     color: #404040;
 }
-
+.show-block{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    height: 28px;    
+}
 .show-ticker{
     position: absolute;
     width: 43px;
     height: 28px;
     left: 20px;
-    top: 30px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -214,8 +220,8 @@ button{
     position: absolute;
     width: fit-content;
     height: 28px;
-    top: 30px;
-    right: -250px;
+    right: 290px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -228,8 +234,6 @@ button{
     width: 60px;
     height: 28px;
     left: 270px;
-    top: 30px;
-
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -241,8 +245,7 @@ button{
     position: absolute;
     width: 60px;
     height: 28px;
-    left: 338px;
-    top: 30px;
+    left: 350px;
 
     font-style: normal;
     font-weight: 500;
@@ -255,8 +258,7 @@ button{
     position: absolute;
     width: 60px;
     height: 28px;
-    left: 433px;
-    top: 30px;
+    left: 440px;
 
     font-style: normal;
     font-weight: 500;
@@ -264,6 +266,14 @@ button{
     line-height: 28px;
     /* dark */
     color: #404040;
+}
+
+.logo-delete{
+
+    left: 500px;    
+
+    width: 20.8px;
+    height: 26px;
 }
 /* -----------------------------------------*/
 /* --- Addlist.js ---*/
