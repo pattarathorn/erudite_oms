@@ -9,7 +9,7 @@ import "./style.css";
 /* Mockdata */
 const initialList = [
     {
-        id:"1",
+        id:"0",
         ticker:"CPALL",
         start_time:"10.00",
         end_time:"12.30",
@@ -30,10 +30,13 @@ const Cardinput = () => {
                     setlist = {setList}
                 />
                 <div className = "card-data">
-                    <ListTicker props={list} />
+                    <ListTicker 
+                        props={list} 
+                        setlist = {setList}
+                    />
                 </div>
             </Card.Body>
-            <div className="input-dropdown"> <TickerDropdown /> </div>
+            
         </Card>
     )
 }

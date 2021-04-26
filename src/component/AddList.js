@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import TickerDropdown from './TickerDropdown';
 import 'react-calendar/dist/Calendar.css';
 import Switch from 'react-switch'
 import './style.css';
@@ -24,12 +25,17 @@ const AddList = ({ initList,  setlist}) => {
     const [volumn,setVolumn] = useState('')
     const [start_time,setTimestart] = useState('')
     const [end_time,setTimestop] = useState('')
+    const [id,setId] = useState(1)
+
 
     /* --- change state element --- */
-    function changeTicker(e){
+
+ {/*   function changeTicker(e){
         setTicker(prevticker => e.target.value)
         console.log(ticker)
     }
+
+*/}
 
     function changeVolumn(e){
         console.log(volumn)
@@ -52,7 +58,8 @@ const AddList = ({ initList,  setlist}) => {
 
     /* --- Add element to list --- */
     function handleAdd(e) {
-        const newList = initList.concat({ ticker, volumn, start_time, end_time ,type});
+        setId(prevID => prevID + 1)
+        const newList = initList.concat({ id, ticker, volumn, start_time, end_time ,type});
         setlist(newList)
         console.log(newList)
         e.preventDefault();
@@ -60,7 +67,8 @@ const AddList = ({ initList,  setlist}) => {
 
     return(
         <div >
-            <input className="input-ticker" type = "text" value={ticker} placeholder="Ticker" onChange={changeTicker}/>
+            <div className="input-dropdown"> <TickerDropdown setticker={setTicker}/> </div>
+{/*            <input className="input-ticker" type = "text" value={ticker} placeholder="Ticker" onChange={changeTicker}/> */}
             <input className="input-volomn" type = "text"  pattern="[0-9]*" value={volumn} placeholder="volumn" onChange={changeVolumn}/>
             <input className="input-timestart" type = "text" value={start_time} placeholder="00:00" onChange={changeTimestart}/>
             <input className="input-timeend" type = "text" value={end_time} placeholder="24:00" onChange={changeTimestop} />

@@ -9,7 +9,6 @@ body {
     height: 100vh;
     width: 640px;
 
-
     /* white */
     background: #FFFFFF;
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -174,11 +173,16 @@ button{
     height: 457px;
     left: 25px;
     top: 240px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
     /* white */
-    background: #FFFFFF;
+    background: white;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
+
 /* --------- listTicker.js ------------- */
 .font-listticker{
     position: absolute;
@@ -350,29 +354,29 @@ button{
 
 .input-dropdown{
     position: absolute;
-    top: 400px;
-    left: 200px;
+    top: 183px;
+    left: 25px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-
+    line-height: 28px;
     /* base */
-    color: #000000;  
+    color: #000000;
+    background-color: violet;
 }
 /* DROPDOWN INPUT */
 .react-autosuggest__container {
-    position: relative;
+    position: absolute;
 }
   
 .react-autosuggest__input {
-    width: 240px;
-    height: 30px;
-    padding: 10px 20px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    width: 94px;
+    height: 28px;
+
+
+    font-weight: 500;
+    font-size: 24px;
+
     border-style: none none solid none;
 }
   
@@ -393,7 +397,7 @@ button{
     display: block;
     position: absolute;
     top: 51px;
-    width: 280px;
+    width: 94px;
     border: 1px solid #aaa;
     background-color: #fff;
     font-family: Helvetica, sans-serif;
@@ -420,3 +424,9 @@ button{
 }
   
 /* ----------------- */ 
+
+/* scroll */
+html {
+    scroll-behavior: smooth;
+}
+/* ---- */

@@ -95,6 +95,7 @@ class TickerDropdown extends React.Component {
     this.state = {
       value: '',
       suggestions: []
+      
     };
   }
 
@@ -102,6 +103,7 @@ class TickerDropdown extends React.Component {
     this.setState({
       value: newValue
     });
+    this.props.setticker(newValue)
   };
 
   // Autosuggest will call this function every time you need to update suggestions.
@@ -121,16 +123,19 @@ class TickerDropdown extends React.Component {
 
   render() {
     const { value, suggestions } = this.state;
-
     // Autosuggest will pass through all these props to the input.
     const inputProps = {
-      placeholder: 'Type a programming language',
+      placeholder: 'Ticker',
       value,
       onChange: this.onChange
     };
 
     // Finally, render it!
     return (
+      <div>
+        <div>
+          {this.props.ticker}
+        </div>
       <Autosuggest
         suggestions={suggestions}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
@@ -139,6 +144,8 @@ class TickerDropdown extends React.Component {
         renderSuggestion={renderSuggestion}
         inputProps={inputProps}
       />
+
+      </div>
     );
   }
 }
